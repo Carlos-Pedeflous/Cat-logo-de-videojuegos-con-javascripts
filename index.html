@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi catálogo de videojuegos</title>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Mi catálogo de videojuegos</h1>
+    </header>
+
+    <main>
+      <!-- BÚSQUEDA -->
+
+      <section>
+        <h2>Buscar videojuegos</h2>
+
+        <input type="text" id="busqueda" placeholder="Buscar por nombre..." />
+      </section>
+
+      <!-- FORMULARIO -->
+
+      <section>
+        <h2>Agregar videojuego</h2>
+
+        <form id="formulario-videojuego">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required />
+
+          <label for="genero">Género:</label>
+          <input type="text" id="genero" required />
+
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" min="0" step="0.01" required />
+
+          <button type="submit">Agregar videojuego</button>
+        </form>
+      </section>
+
+      <!-- CATÁLOGO -->
+
+      <section>
+        <h2>Videojuegos registrados</h2>
+
+        <div id="catalogo-videojuegos"></div>
+      </section>
+    </main>
+  </body>
+</html>
